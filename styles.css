@@ -1,0 +1,132 @@
+        /*Dimensiones de pagina*/
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes effect-fadein{
+            from{opacity:0;transform:translateY(0px);}
+            to{opacity:1;transform:translateY(0px);}
+        }
+        /*Estilo de <body>*/
+        body { 
+            background-color: rgb(0, 0, 0);
+            color: whitesmoke;
+            font-family: 'Roboto Condensed', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /*Clase que engloba todo*/
+        .container {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+        }
+
+        /*Estilo de <h1>*/
+        h1 {
+            font-size: 5rem;
+            letter-spacing: 0.25em;
+            font-weight: 700;
+            color: whitesmoke;
+            text-shadow: 0.1px 0.1px 5px whitesmoke;
+            animation: effect-fadein 1s ease-in-out;
+            
+        }
+
+        /*Clase que da estilo a la <section> welcome*/
+        .welcome-bar {
+            background-color: rgb(25, 25, 25);
+            border-top: 1px solid  rgb(75, 75, 75);
+            border-bottom: 1px solid  rgb(75, 75, 75);
+            padding: 1em 0;
+            margin-bottom: 4em;
+            animation: effect-fadein 2.5s ease-in-out;
+        }
+
+        /*Clase que da estilo a <h2> de welcome bar*/
+        .welcome-bar h2 {
+            font-size: 1.25rem;
+            letter-spacing: 0.3em;
+            margin: 0;
+            font-weight: 400;
+            color: rgb(150, 150, 150);
+            
+        }
+
+        /*Clase que engloba el apartado de "options"*/
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5em;
+            animation: effect-fadein 2.5s ease-in-out;
+        }
+
+        /*Clase que da estilo al texto "SELECT AN OPTION'*/
+        .select-option-text {
+            color: whitesmoke;
+            letter-spacing: 0.1em;
+            margin: 0 0 1em 0;
+            font-size: 0.9em;
+            animation: effect-fadein 2.5s ease-in-out;
+        }
+
+        /*Clase que engloba cada "option"*/
+        .option-container {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            width: 100%;
+        }
+
+        /*Clase que da estilo a cada "option"*/
+        .option {
+            border: 1px solid rgb(245, 245, 245);
+            padding: 0.8em 0;
+            flex: 1;
+            letter-spacing: 0.1em;
+            font-size: 0.9em;
+            min-width: 80px;
+        }
+
+        /*Clase que da estilo a cada "option" cuando el cursor esta encima*/
+        .option:hover {
+            background-color: rgb(245, 245, 245);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: background-color 0.5s, transform 0.25s;
+        }
+
+        /*Clase que da estilo a "GO TO ENGINE"*/
+        .go-to-engine {
+            border: 1px solid whitesmoke;
+            padding: 0.8em 1.5em;
+            cursor: pointer;
+            letter-spacing: 0.1em;
+            font-size: 0.9em;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        /*Clase que da estilo a "GO TO ENGINE" cuando el cursor esta encima*/
+        .go-to-engine:hover {
+            background-color: rgb(175, 0, 0);
+            color: rgb(0, 0, 0);
+            border: 1px solid rgb(225, 0, 0);
+            transform: scale(1.1);
+            transition: background-color 0.5s, transform 0.25s;
+        }
+
+        /*Clase que da estilo al texto "This page has been developed by Javier Vargas Marin for IES Ruiz Gijon*/
+        .footer-text {
+            color: #777;
+            font-size: 0.8em;
+            margin-top: 5em;
+            animation: effect-fadein 2.5s ease-in-out;
+        }
