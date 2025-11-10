@@ -116,6 +116,8 @@
             font-size: 0.9em;
             width: 100%;
             max-width: 350px;
+            text-decoration: none;
+            color: whitesmoke;
         }
 
         /*Clase que da estilo a "GO TO ENGINE" cuando el cursor esta encima*/
